@@ -3,19 +3,15 @@
   
   <display-name>DemoApp</display-name>
   
-  <display-name>DemoApp</display-name>
-  
   <servlet>
     <servlet-name>abc</servlet-name>
     <servlet-class>com.inferno.AddServlet</servlet-class>
   </servlet>
- 
+
   <servlet-mapping>
     <servlet-name>abc</servlet-name>
     <url-pattern>/add</url-pattern>
   </servlet-mapping>
-  
-  
   
   <servlet>
     <servlet-name>pqr</servlet-name>
@@ -26,6 +22,5 @@
     <servlet-name>pqr</servlet-name>
     <url-pattern>/sqr</url-pattern>
   </servlet-mapping>
-  
   
 </web-app>

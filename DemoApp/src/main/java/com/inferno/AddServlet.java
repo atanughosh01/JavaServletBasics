@@ -1,10 +1,8 @@
 package com.inferno;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,17 +17,20 @@ public class AddServlet extends HttpServlet {
 		int j = Integer.parseInt(req.getParameter("num2"));
 		int k = i + j;
 		
-		// k = k*k;
+		//	PrintWriter out = res.getWriter();
+		//	out.println("The result is = " + k);
+		//	req.setAttribute("k", k);
 		
-		// System.out.println("The result is = " + k);
-		 PrintWriter out = res.getWriter();
-		 out.println("The result is = " + k);
+		// Request dispatcher
+		// RequestDispatcher rd = req.getRequestDispatcher("sqr");
+		// rd.forward(req, res);
 		
-		req.setAttribute("k", k);
-//		
-//		// Request dispatcher
-//		RequestDispatcher rd = req.getRequestDispatcher("sqr");
-//		rd.forward(req, res);
+		// Session data can be stored by using HttpSession or Cookie
+		// HttpSession session = req.getSession();
+		// session.setAttribute("k", k);
+		
+		Cookie cookie = new Cookie("k", k+"");
+		res.addCookie(cookie);
 		
 		// Redirect
 		// res.sendRedirect("sqr");
