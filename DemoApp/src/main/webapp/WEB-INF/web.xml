@@ -26,7 +26,7 @@
 -->
 
 
-  <servlet>
+  <!-- <servlet>
     <servlet-name>mst</servlet-name>
     <servlet-class>com.inferno.MyServlet</servlet-class>
 
@@ -50,6 +50,6 @@
 <context-param>
 	<param-name>phone</param-name>
 	<param-value>Samsung</param-value>
-</context-param>
+</context-param> -->
 
 </web-app>

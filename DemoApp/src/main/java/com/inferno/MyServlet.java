@@ -6,11 +6,13 @@ import java.io.PrintWriter;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@SuppressWarnings("serial")
+// @SuppressWarnings("serial")
+@WebServlet("/home")
 public class MyServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
@@ -23,9 +25,8 @@ public class MyServlet extends HttpServlet {
 		String str = ctx.getInitParameter("name");
 		out.println(str + " !!");
 		
-		out.print("You use a ");
 		str = ctx.getInitParameter("phone");
-		out.println(str + " phone.");
+		out.println("You use a " + str + " phone.");
 		
 		
 		// ServletConfig
