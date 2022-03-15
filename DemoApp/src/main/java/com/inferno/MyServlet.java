@@ -15,7 +15,7 @@ public class MyServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
 		PrintWriter out = res.getWriter();
-		out.print("Hi<\br>");
+		out.print("Hi ");
 		
 		ServletContext ctx = getServletContext();
 		String str = ctx.getInitParameter("name");

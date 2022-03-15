@@ -33,7 +33,7 @@
  
   <servlet-mapping>
     <servlet-name>mst</servlet-name>
-    <url-pattern>/home</url-pattern>
+    <url-pattern>/my</url-pattern>
   </servlet-mapping>
  
 <context-param>
@@ -42,7 +42,7 @@
 </context-param>
 
 <context-param>
-	<param-name>Phone</param-name>
+	<param-name>phone</param-name>
 	<param-value>Samsung</param-value>
 </context-param>
 
