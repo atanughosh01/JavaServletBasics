@@ -29,6 +29,12 @@
   <servlet>
     <servlet-name>mst</servlet-name>
     <servlet-class>com.inferno.MyServlet</servlet-class>
+
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>John</param-value>
+    </init-param>
+
   </servlet>
  
   <servlet-mapping>
